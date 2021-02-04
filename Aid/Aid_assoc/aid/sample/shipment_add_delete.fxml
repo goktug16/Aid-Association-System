@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="758.0" prefWidth="959.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.shipment_controller">
+   <children>
+      <TableView fx:id="shipment_table" prefHeight="539.0" prefWidth="464.0" AnchorPane.bottomAnchor="219.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="495.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="from" prefWidth="87.0" text="From" />
+          <TableColumn fx:id="to" prefWidth="85.0" text="To" />
+            <TableColumn fx:id="item" prefWidth="82.0" text="Item" />
+            <TableColumn fx:id="date" prefWidth="94.0" text="Date" />
+            <TableColumn fx:id="plate" prefWidth="115.0" text="Plate" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="309.0" fitWidth="481.0" layoutX="500.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@world-map-red-concentric-rings-white-background-earthquake-epicentre-theme-modern-design-vector-wallpaper-87126765.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="641.0" layoutY="14.0" prefHeight="43.0" prefWidth="170.0" text="Manager" textFill="#2499d3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="shipment_text" layoutX="614.0" layoutY="302.0" prefHeight="43.0" prefWidth="194.0" text="Shipment Add/Delete" textFill="#2499d3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="from_text" layoutX="500.0" layoutY="352.0" prefHeight="27.0" prefWidth="170.0" promptText="From" style="-fx-border-color: #2499d3;" />
+      <TextField fx:id="to_text" layoutX="500.0" layoutY="392.0" prefHeight="27.0" prefWidth="170.0" promptText="To" style="-fx-border-color: #2499d3;" />
+      <TextField fx:id="plate_text" layoutX="733.0" layoutY="392.0" prefHeight="27.0" prefWidth="161.0" promptText="Plate" style="-fx-border-color: #2499d3;" />
+      <Button fx:id="add_shipment" layoutX="736.0" layoutY="447.0" mnemonicParsing="false" onAction="#add_shipment_func" prefHeight="33.0" prefWidth="161.0" text="Add Shipment" textFill="#2499d3" />
+      <Button fx:id="delete_shipment" layoutX="500.0" layoutY="447.0" mnemonicParsing="false" onAction="#delete_shipment_func" prefHeight="33.0" prefWidth="170.0" text="Delete Shipment" textFill="#2499d3" />
+      <DatePicker fx:id="date_text" layoutX="733.0" layoutY="352.0" prefHeight="27.0" prefWidth="161.0" promptText="Date" style="-fx-border-color: #2499d3;" />
+      <TableView fx:id="selected_table" layoutY="544.0" prefHeight="214.0" prefWidth="464.0">
+        <columns>
+          <TableColumn fx:id="selected_from" prefWidth="75.0" text="From" />
+            <TableColumn fx:id="selected_item" prefWidth="91.0" text="Item" />
+            <TableColumn fx:id="selected_date" prefWidth="104.0" text="Date" />
+            <TableColumn fx:id="selected_plate" prefWidth="96.0" text="Plate" />
+            <TableColumn fx:id="selected_category" prefWidth="96.0" text="Category" />
+        </columns>
+      </TableView>
+      <TextField fx:id="to_find" layoutX="495.0" layoutY="590.0" prefHeight="27.0" prefWidth="161.0" promptText="To" style="-fx-border-color: #2499d3;" />
+      <Label fx:id="find_shipment" layoutX="636.0" layoutY="534.0" prefHeight="33.0" prefWidth="194.0" text="Find Shipment" textFill="#2499d3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="show_list" layoutX="495.0" layoutY="638.0" mnemonicParsing="false" onAction="#to_show_list" prefHeight="25.0" prefWidth="161.0" text="Show List" textFill="#2499d3" />
+      <DatePicker fx:id="to_since" layoutX="770.0" layoutY="590.0" prefHeight="27.0" prefWidth="161.0" promptText="Since" style="-fx-border-color: #2499d3;" />
+      <DatePicker fx:id="to_until" layoutX="770.0" layoutY="637.0" prefHeight="27.0" prefWidth="161.0" promptText="Until" style="-fx-border-color: #2499d3;" />
+      <TextField fx:id="count_to" layoutX="770.0" layoutY="676.0" prefHeight="27.0" prefWidth="161.0" promptText="To" style="-fx-border-color: #2499d3;" />
+      <Button fx:id="show_count" layoutX="765.0" layoutY="713.0" mnemonicParsing="false" onAction="#show_count" prefHeight="25.0" prefWidth="170.0" text="Show Count" textFill="#2499d3" />
+      <Button fx:id="closest" layoutX="495.0" layoutY="691.0" mnemonicParsing="false" onAction="#show_first_shipment" prefHeight="27.0" prefWidth="161.0" text="Show First Shipment" textFill="#2499d3" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="486.0" prefWidth="986.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.second_c">
+   <children>
+      <MenuBar fx:id="menu" layoutX="-1.0" layoutY="14.0" prefHeight="39.0" prefWidth="945.0" AnchorPane.bottomAnchor="535.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu fx:id="shipment" mnemonicParsing="false" text="Shipment">
+            <items>
+              <MenuItem fx:id="list_shipment" mnemonicParsing="false" onAction="#show_shipment_list" text="List" />
+            </items>
+          </Menu>
+          <Menu fx:id="Donation" mnemonicParsing="false" text="Donation">
+            <items>
+              <MenuItem fx:id="Add_donation" mnemonicParsing="false" text="Add" />
+                  <MenuItem fx:id="List" mnemonicParsing="false" onAction="#show_donation_list" text="List" />
+            </items>
+          </Menu>
+            <Menu fx:id="Employee" disable="true" mnemonicParsing="false" onAction="#employee_scene" text="Employee" visible="false">
+               <items>
+                  <MenuItem fx:id="emp_hire" mnemonicParsing="false" text="Section" />
+               </items>
+            </Menu>
+            <Menu fx:id="Donor" disable="true" mnemonicParsing="false" text="Donor" visible="false">
+               <items>
+                  <MenuItem fx:id="donor_list" mnemonicParsing="false" onAction="#show_donor_list" text="List" />
+               </items>
+            </Menu>
+        </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MenuBar>
+      <Label fx:id="isim_label" layoutX="131.0" layoutY="53.0" prefHeight="63.0" prefWidth="407.0" text="WELCOME TO THE EARTHQUAKE HELP CENTER" textFill="#2499d3">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name_field" disable="true" layoutX="447.0" layoutY="202.0" style="-fx-border-color: #2499d3;" />
+      <TextField fx:id="item_name" layoutX="79.0" layoutY="230.0" style="-fx-border-color: #2499d3;" />
+      <TextField fx:id="item_description" layoutX="79.0" layoutY="304.0" style="-fx-border-color: #2499d3;" />
+      <TextField fx:id="amount" layoutX="79.0" layoutY="376.0" style="-fx-border-color: #2499d3;" />
+      <Label layoutX="79.0" layoutY="135.0" text="SSN" textFill="#2499d3" />
+      <Label layoutX="79.0" layoutY="351.0" prefHeight="17.0" prefWidth="121.0" text="Quantity/ Amount" textFill="#2499d3" />
+      <Label layoutX="79.0" layoutY="279.0" prefHeight="17.0" prefWidth="110.0" text="Item Description" textFill="#2499d3" />
+      <Label layoutX="79.0" layoutY="206.0" prefHeight="17.0" prefWidth="76.0" text="Item Name" textFill="#2499d3" />
+      <Button fx:id="donation_button" layoutX="79.0" layoutY="436.0" mnemonicParsing="false" onAction="#donation_add" prefHeight="25.0" prefWidth="149.0" text="Add Donation" textFill="#2499d3" />
+      <TextField fx:id="ssn" layoutX="79.0" layoutY="163.0" style="-fx-border-color: #2499d3;" />
+      <TextField fx:id="surname_field" disable="true" layoutX="447.0" layoutY="275.0" style="-fx-border-color: #2499d3;" />
+      <TextField fx:id="contact_field" disable="true" layoutX="447.0" layoutY="347.0" style="-fx-border-color: #2499d3;" />
+      <Label fx:id="Donator_name" disable="true" layoutX="447.0" layoutY="176.0" prefHeight="17.0" prefWidth="91.0" text="Donator Name" textFill="#2499d3" />
+      <Label fx:id="Donater_Surname" disable="true" layoutX="447.0" layoutY="247.0" prefHeight="17.0" prefWidth="121.0" text="Donator Surname" textFill="#2499d3" />
+      <Label fx:id="Contact_number" disable="true" layoutX="447.0" layoutY="317.0" prefHeight="17.0" prefWidth="91.0" text="Contact Number" textFill="#2499d3" />
+      <Button fx:id="donator_button" disable="true" layoutX="447.0" layoutY="401.0" mnemonicParsing="false" onAction="#donator_add" prefHeight="25.0" prefWidth="149.0" text="Add Donator" textFill="#2499d3" />
+      <ImageView fitHeight="329.0" fitWidth="359.0" layoutX="613.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@world-map-red-concentric-rings-white-background-earthquake-epicentre-theme-modern-design-vector-wallpaper-87126765.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="req_pw" layoutX="695.0" layoutY="492.0" mnemonicParsing="false" onAction="#req_pw_func" prefHeight="25.0" prefWidth="178.0" text="Request Password Change" textFill="#2499d3" />
+      <TextField fx:id="first_pw" disable="true" layoutX="747.0" layoutY="347.0" prefHeight="27.0" prefWidth="195.0" promptText="new password" style="-fx-border-color: #2499d3;" visible="false" />
+      <TextField fx:id="repe_pw" layoutX="747.0" layoutY="390.0" prefHeight="27.0" prefWidth="195.0" promptText="repeat new password" style="-fx-border-color: #2499d3;" visible="false" />
+      <Button fx:id="change_pw" disable="true" layoutX="747.0" layoutY="436.0" mnemonicParsing="false" onAction="#pw_change" prefHeight="25.0" prefWidth="131.0" text="Password Change" textFill="#2499d3" visible="false" />
+      <Button fx:id="log_out" layoutX="32.0" layoutY="505.0" mnemonicParsing="false" onAction="#log_out_function" prefHeight="25.0" prefWidth="138.0" text="Log out" textFill="#d12626" />
+   </children>
+</AnchorPane>

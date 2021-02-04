@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.donation_controller">
+   <children>
+      <TableView fx:id="table_donat" layoutX="6.0" layoutY="2.0" prefHeight="707.0" prefWidth="434.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+        <columns>
+          <TableColumn fx:id="item_name_col" prefWidth="142.0" text="Item Name" />
+          <TableColumn fx:id="item_desc_col" prefWidth="142.0" text="Item Description" />
+            <TableColumn fx:id="item_quantity_col" prefWidth="148.0" text="Item Quantity" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
