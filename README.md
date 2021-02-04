@@ -10,3 +10,35 @@ that can only be seen by the managers in interface such as fire/hire employee or
 
 - Log-In Screen
 
+
+![](images/log-in.png)
+
+
+-Shipments Activities Screen
+
+
+![](images/shipments.png)
+
+
+-Items Screen
+
+
+![](images/items.png)
+
+
+-Employee Fire/Hire Screen
+
+
+![](images/fire_emp.png)
+
+
+
+-Donors Screen
+
+![](images/donors.png)
+
+
+-Shipments List
+
+
+![](images/shipment_activities.png)
