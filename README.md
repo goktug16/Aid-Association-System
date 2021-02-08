@@ -7,6 +7,8 @@ After Creating both system interface using JavaFX and database using PostqreSQL 
 using his log-in infos that is already defined in database and add donor and create shipments for the association. Also Manager can enter the system with privileges
 that can only be seen by the managers in interface such as fire/hire employee or find spesific shipments from shipments list
 
+<a href="https://github.com/sercaksoy"> Sercan Aksoy </a>
+<a href="https://github.com/metinbinbir"> Metin Binbir </a>
 
 - Log-In Screen
 
