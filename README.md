@@ -1,5 +1,5 @@
 # Aid-Association-System
-Goal of this project is designing a system for aid association system with JavaFX and a local database system with PostqreSQL
+Goal of this project is designing a system for aid association  with JavaFX and a local database system with PostqreSQL
 
 
 In this project,local database created with PostqreSQL and all the sql queries created according to infos that we wanted from system interface.
